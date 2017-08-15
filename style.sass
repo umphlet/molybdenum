@@ -1,0 +1,131 @@
+/**
+  Theme Name: Molybdenum
+  Theme URI: http://github.com/umphlet/molybdenum
+  Description: A brief description of your theme
+  Version: 0.1
+  Author: Sean Umphlet
+  Author URI: http://umphlet.com
+  Tags: Blue, Bootstrap, Monospace, Pastel
+
+$sans-font: Lato, Arial, Sans-Serif
+$serif-font: "Roboto Slab", Serif
+$mono-font: "Fira Mono", Courier New, Monospace
+$head-home-bg: #333
+$head-bg: #fff
+$nav-bg: #3B7CBC
+$light-color: #fff
+$light-color-hover: #ccc
+$head-yellow-color: #FFB035
+$head-blue-color: #96B4D6
+$head-green-color: #7A8A27
+$head-red-color: #d93529
+$dark-color: #333
+$dark-color-hover: #555
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+=threedee-border($color)
+  border-top: 1px solid $color
+  border-left: 1px solid $color
+  border-right: 2px solid $color
+  border-bottom: 2px solid $color
+
+body 
+  font-family: $sans-font
+  color: $dark-color
+
+header
+  height: 50px
+  background-color: $head-home-bg
+  color: $light-color
+  font-family: $mono-font
+  padding-top: 1px
+  padding-bottom: 1px
+  margin-top: -10px
+
+nav
+  border-top: 1px solid black
+  background-color: $nav-bg !important
+  color: $light-color !important
+
+nav a
+  color: $light-color !important
+
+nav a:hover
+  color: $light-color-hover !important
+
+nav .dropdown-menu a, nav .open a
+  color: $dark-color !important
+
+nav .dropdown-menu a:hover
+  color: $dark-color-hover !important
+
+main
+  margin-top: 0px
+
+.bottom
+  background-color: $dark-color !important
+  color: $light-color !important
+  padding-top: 10px
+
+h1
+  font-weight: normal
+  font-size: 24px
+
+h1 .blue
+  color: $head-blue-color
+
+h1 .green, h1 .green a
+  color: $head-green-color
+
+h1 .yellow
+  color: $head-yellow-color
+
+h1 .red
+  color: $head-red-color
+
+h1 .green a
+  text-decoration: underline
+
+h2
+  font-family: $serif-font
+
+.date
+  background-color: #FCF5DB
+  +border-radius(0.5em)
+  +threedee-border(#999)
+  padding: 1px
+  text-align: center
+  width: 50px
+  position: relative
+  top: 60px
+  left: 5px
+  margin-top: -45px
+  cursor: help
+
+.date .month
+  text-transform: uppercase
+  font-size: 1em
+  padding: 1px
+  line-height: 0.7  
+
+.date .day
+  color: $head-red-color
+  font-size: 1.7em
+  padding: 0px
+  line-height: 0.7  
+
+.post-header h2
+  padding-left: 65px
+  background-color: $head-green-color
+  color: $light-color
+
+.post-header h2 a
+  color: $light-color
+
+.author
+  font-style: italic
