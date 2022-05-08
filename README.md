@@ -2,4 +2,4 @@
 # by Sean Umphlet
 Molybdenum Wordpress Theme
 
-Still a work in progress.
+Archived project. No longer active or interested in maintaining.
